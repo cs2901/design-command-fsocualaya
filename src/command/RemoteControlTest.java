@@ -7,6 +7,8 @@ public class RemoteControlTest {
         LightOnCommand lightOn = new LightOnCommand(light);
 
         remote.setCommand(lightOn);
+
+        LightOnCommand lightOff = new LightOnCommand(light);
         remote.buttonWasPressed();
     }
 }
